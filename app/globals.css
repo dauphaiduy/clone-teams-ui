@@ -1,26 +1,103 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --background: #171717;
+  --foreground: #ffffff;
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+    --background: #ededed;
+    --foreground: #0a0a0a;
   }
+}
+
+/* Custom utility classes */
+.text-xxs {
+  font-size: 0.625rem;
+  line-height: 0.75rem;
+}
+
+/* Custom component styles */
+.sidebar-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.6rem;
+  padding: 0.6rem;
+  transition: all 0.2s;
+  cursor: pointer;
+}
+
+.sidebar-item:hover {
+  color: #5c85d5;
+}
+
+.sidebar-item-active {
+  background-color: #dbeafe;
+  color: #1d4ed8;
+}
+
+.common-item {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  padding: 0.6rem;
+  transition: all 0.2s;
+  cursor: pointer;
+}
+.common-item:hover {
+  background-color: #cccccc;
 }
 
 body {
   background: var(--background);
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Header search input styles */
+.custom-search-input input {
+  background-color: transparent !important;
+  color: white !important;
+  border: none !important;
+}
+
+.custom-search-input input::placeholder {
+  color: #9ca3af !important; /* gray-400 */
+  font-style: italic;
+}
+
+.custom-search-input input:focus::placeholder {
+  color: #6b7280 !important; /* gray-500 */
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}
+
+.custom-search-input .ant-input-affix-wrapper {
+  background-color: transparent !important;
+  border: none !important;
+  box-shadow: none !important;
+}
+
+.custom-search-input .ant-input-affix-wrapper:focus,
+.custom-search-input .ant-input-affix-wrapper:focus-within {
+  border: none !important;
+  box-shadow: none !important;
+}
+
+.custom-menu {
+  background-color: transparent !important;
+}
+
+
+.ant-menu-sub {
+  background-color: transparent !important;
+}
+.ant-menu-item:hover {
+  background-color: rgba(255, 255, 255, 0.1) !important;
+}
+.ant-menu-item-selected {
+  background-color: rgba(255, 255, 255, 0.2) !important;
 }
