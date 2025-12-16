@@ -5,7 +5,7 @@ import * as React from 'react';
 
 export default function Header () {
   return (
-    <div className='pr-4  bg-black text-white flex justify-between items-center border-b border-gray-600'>
+    <div className='pr-4  bg-black text-white flex justify-between items-center border-b border-neutral-600'>
         <div className='common-item'>
           <FontAwesomeIcon icon={faList} className='size-5! mr-7 ml-6 text-gray-400'/>
         </div>

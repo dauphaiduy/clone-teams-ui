@@ -76,7 +76,7 @@ export default function Home() {
   return (
     <div className="w-full flex min-h-screen font-sans ">
       <div className="min-w-full flex flex-row">
-        <div className="w-1/5 border-r pt-5 pb-5 border-gray-300 bg-neutral-900 ">
+        <div className="w-1/5 border-r pt-5 pb-5 border-neutral-600 bg-neutral-900 ">
           <div className="">
             <div className="pb-5 pr-3 pl-3 flex items-center justify-between mb-4 border-b border-black">
               <h3 className="text-xl font-semibold text-white">Trò chuyện</h3>

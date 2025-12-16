@@ -28,7 +28,7 @@ const sidebarItems = [
 export default function Sidebar() {
 
   return (
-    <div className="p-2 border-r border-gray-300 h-screen bg-black">
+    <div className="p-2 border-r border-neutral-600 h-screen bg-black">
       <div className="flex flex-col ">
         {sidebarItems.map((item, index) => (
           <div key={index} className="sidebar-item font-light text-gray-400">
